@@ -1,0 +1,19 @@
+En los comandos:
+1. git init --> permite crear un nuevo REPOSITORIO (el proyecto) - crea una carpeta oculta dentro de la carpeta del proyecto (no hay que hacerle nningun cambio NO TOCAR)
+* se crea un archivo html *
+2. git status --> permite ver cual es el estado actual del repositorio > cada vez que hay un cambio importante en el sitio se genera un nuevo COMMIT (una nueva version)
+STAYING INDEX : es una fase q tenemos antes de enviar nuestros archivos a una nueva version - alli estan todos los archivos preparados para hacer commit (una nueva version)
+* al principio vamos a tener archivos sin trakear, entonces antes de hacer un commit hay q mandarlo al staying index *
+3. git add index.html
+4. git status - ahora si apareceran cambios listos para ser agregados a una nueva version. (si esta en verde esta listo para ser guardado como nueva verison)
+5. git commit -m "descripcion" (cual, porque y para que es el cambio)
+* si se hace un cambio se tiene que volver a generar un staying index antes de un commit - lo verifico con git status *
+6. git add . --> con el . agrego la modificacion de todos los archivos tocados
+7. git status (pone el archio en verde listo para generar nueva version)
+8. git rm --cached index.html --> permite eliminar los cambios del staying index
+
+--------------------
+Se suele crear un archivo llamado : .gitignore --> para ignorar ciertos archiovos que no queremos que queden incluidos. Ej:
+
+*.psd     (todos los archivos psd)
+contacto.html
